@@ -3,5 +3,11 @@
 Have any unanswered Quesitons?.....let us help just
 ask your question and await a response.
 
+<ul>
+  {{#each model as |questions|}}
+  <li>{{question.author}} Question and {{question.content}} Topic</li>
+  {{/each}}
+</ul>
+
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}Click here to contact us.{{/link-to}}
