@@ -5,7 +5,7 @@ ask your question and await a response.
 
 <ul>
   {{#each model as |question|}}
-  <li>{{question.author}} Question and {{question.content}} Topic</li>
+    {{question-tile question=question}}
   {{/each}}
 </ul>
 
