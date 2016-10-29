@@ -1,3 +1,9 @@
 <li>
-  {{quesiton.author}}Author:        {{qustion.content}}  Content:{{qustion.notes}}
+  {{question.author}} Content: {{question.content}}
+  {{#if notesShowing}}
+    <p> Notes: {{question.notes}}</p>
+    <button {{action 'noNotes'}}>Hide</button>
+  {{else}}
+      <button {{action 'showNotes'}}>Display</button>
+  {{/if}}
 </li>
